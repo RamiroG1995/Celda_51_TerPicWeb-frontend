@@ -1,0 +1,104 @@
+<div class="container6">
+<h2>Contáctanos</h2>
+
+<div class="contact">
+ <form  (ngSubmit)="contactForm(mailForm)" #mailForm="ngForm" >
+	 <div class="form-group">
+		 <label>Nombre</label> <br>
+		 <input type="text" class="form-control" name="nombre" ngModel>
+	 </div>
+	 <div class="form-group">
+		 <label>Asunto</label> <br>
+		 <input type="text" class="form-control" name="asunto" ngModel>
+	 </div>
+	 <div class="form-group">
+		 <label>E-mail</label> <br>
+		 <input type="email" class="form-control" name="email" ngModel required>
+	 </div>
+	 <div class="form-group">
+		 <label>Mensaje</label> <br>
+		 <textarea class="form-control" name="mensaje" ngModel required></textarea>
+	 </div>
+
+	 <button type="submit" class="btn-primary" [disabled]="!mailForm.form.valid">Enviar</button>
+
+ </form>
+</div>
+
+<a href="https://wa.me/593983190050/?text=Hola Ramiro, me gustaria saber más acerca de tu aplicación web TerPicWeb" target="_blank">
+
+	<img id="ws" src="https://firebasestorage.googleapis.com/v0/b/celda-51.appspot.com/o/Contact%2Fws.png?alt=media&token=ab0dc151-6d34-4c9a-92f2-6f1470216b5d" >
+</a>
+
+<!--
+<a class="aplicacionesig">
+	<img id="ig" src="https://firebasestorage.googleapis.com/v0/b/celda-51.appspot.com/o/Contact%2Fig.png?alt=media&token=d6fe0c6b-f097-4574-b71c-2778aa222d32" >
+</a>
+
+<a class="aplicacionesws">
+	<img id="ws" src="https://firebasestorage.googleapis.com/v0/b/celda-51.appspot.com/o/Contact%2Fws.png?alt=media&token=ab0dc151-6d34-4c9a-92f2-6f1470216b5d" >
+</a>
+
+<a class="aplicacioneslk">
+	<img id="lk" src="https://firebasestorage.googleapis.com/v0/b/celda-51.appspot.com/o/Contact%2Flk.png?alt=media&token=94feb8e1-725e-4666-8372-5bbadb81898f" >
+</a>
+
+.aplicacionesig{
+	display: inline-block;
+	width: 15%;
+	float: left;
+	height: 480px;
+	margin-left: 5px;
+	border-radius:20px;
+	overflow: hidden;
+	background:linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.aplicaciones ig img{
+	width: 80%;
+	margin-left: 20px;
+	margin-top: 145px;
+}
+
+.aplicacionesws{
+	display: inline-block;
+	width: 15%;
+	float: left;
+	height: 480px;
+	margin-left: 5px;
+	border-radius:20px;
+	overflow: hidden;
+	background: #00bb2d;
+}
+
+.aplicaciones ws img{
+	width: 80%;
+	margin-left: 20px;
+	margin-top: 145px;
+}
+
+.aplicacioneslk{
+	display: inline-block;
+	width: 15%;
+	float: left;
+	height: 480px;
+	margin-left: 5px;
+	border-radius:20px;
+	overflow: hidden;
+	background: #0e76a8;
+}
+
+.aplicaciones lk img{
+	width: 80%;
+	margin-left: 20px;
+	margin-top: 145px;
+}
+
+#lk{
+	width: 75%;
+	margin-left: 30px;
+	margin-top: 160px;
+}
+-->
+
+</div>

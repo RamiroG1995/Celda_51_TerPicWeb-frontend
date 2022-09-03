@@ -1,0 +1,19 @@
+
+<header>
+  <ul>
+    <li id="logo2"><a [routerLink]="['/home']"><img src="assets/img/panda.png"></a></li>
+    <li id="logo"><a [routerLink]="['/home']" href="#">TerPicWeb</a></li>
+    <li><a [routerLink]="['/home']" [routerLinkActive]="['actived']">Home</a></li>
+    <li><a [routerLink]="['/principal']" [routerLinkActive]="['actived']">Página Principal</a></li>
+    <li><a [routerLink]="['/about']" [routerLinkActive]="['actived']">Acerca de</a></li>
+    <li><a [routerLink]="['/contact']" [routerLinkActive]="['actived']">Contacto</a></li>
+
+  </ul>
+</header>
+<section id="content">
+<router-outlet></router-outlet>
+</section>
+
+<footer>
+  Aplicación Interactiva para Niños con Autismo &copy;
+</footer>

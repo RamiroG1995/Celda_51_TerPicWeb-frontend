@@ -1,0 +1,625 @@
+/* Importar Fuentes custom */
+
+@font-face{
+	font-family: "Frank";
+	src: url("fonts/Frank.ttf");
+}
+
+@font-face{
+	font-family: "mustardo";
+	src: url("fonts/mustardo.ttf");
+}
+
+@font-face{
+	font-family: "Rumble";
+	src: url("fonts/Rumble.otf");
+}
+
+@font-face{
+	font-family: "SacredBridge";
+	src: url("fonts/SacredBridge.ttf");
+}
+
+@font-face{
+	font-family: "Frank-Light";
+	src: url("fonts/Frank-Light.ttf");
+}
+
+@font-face{
+	font-family: "SFPro";
+	src: url("fonts/SFPro.ttf");
+}
+
+
+/* Generales  */
+
+
+*{
+	margin:  0px;
+	padding: 0px;
+}
+
+h2{
+	font-family: "SFPro";
+	font-size: 40px;
+	text-align: center;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-bottom: 50px;
+}
+
+body{
+	font-family: "SFPro", Helvetica;
+	font-size: 20px;
+	background: #f8f8ff;
+	/*background: url('../img/m4.jpg');*/
+	background-attachment: fixed;
+	height: auto;
+}
+
+.clearfix{
+	float: none;
+	clear: both;
+}
+
+/* Barra de Navegación o Header  #F7C331*/
+
+header{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background: #6b8e23;
+	position: fixed;
+	z-index: 400001;
+	font-weight: bold;
+}
+
+
+header ul{
+	display: block;
+	width: 100%;
+	height: inherit;
+	margin: 0px auto;
+	float: right;
+	margin-top: -4px;
+}
+
+
+header ul li{
+	display: inline-block;
+	margin: 0px auto;
+	text-align: right;
+	line-height: 51.5px;
+	font-size: 14px;
+}
+
+header a{
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: inherit;
+	text-decoration: none;
+	color: black;
+	transition: all 300ms;
+}
+
+header ul li a img{
+	display: block;
+	height: inherit;
+	margin: 0px auto;
+	width: 30px;
+	padding-top: 0px;
+	margin-bottom: -10px;
+}
+
+header a:hover,
+.actived{
+	background: #1e3b1f;
+	color: white;
+}
+
+/* Logotipo  */
+
+#logo{
+	font-family: "mustardo";
+	font-size: 20px;
+	margin-right: 850px;
+}
+
+#logo a{
+	transition: transform 500ms;
+}
+
+header #logo a:hover{
+	background: transparent;
+	transform: scale(1.20,1.20);
+	color: black;
+}
+
+#logo2{
+	margin-right: -30px;	
+}
+
+#logo2 a{
+	transition: transform 500ms;
+	padding-bottom: 3px;
+}
+
+header #logo2 a:hover{
+	background: transparent;
+	transform: scale(1.20,1.20);
+}
+
+
+/* Contenedor principal  */
+
+.container6{
+	min-height: 700px;
+}
+
+.container9{
+	min-height: 1000px;
+}
+
+#content{
+	height: auto;
+	width: 90%;
+	margin: 0px auto;
+	/*box-shadow: 0px 0px 10px black;
+	border-left: 1px solid #b7b7b7;
+	border-right: 1px solid #b7b7b7;
+	background: rgba(255,255,255,0.7);*/
+	background: rgba(255,255,255,1);
+	padding-top: 100px;
+}
+
+
+
+/* Footer  */
+
+footer{
+	width: 90%;
+	margin: 12px auto;
+	padding-top: 15px;
+	color: rgba(0,0,0,0.5);
+}
+
+/* Página principal */
+
+
+
+.project{
+	list-style: none;
+	display: block;
+	float: left;
+	width: 26%;
+	text-align: center;
+	margin-left: 70px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+}
+
+.project img{
+	width: 100%;
+	transition: transform 500ms;
+	margin-bottom: 15px;
+}
+
+.project img:hover{
+	transform: scale(1.10,1.10);
+	cursor: pointer;
+}
+
+.project a{
+	text-decoration: none;
+	color: black;
+}
+
+/* Página de Cuentos */
+
+.cuento{
+	list-style: none;
+	display: block;
+	float: left;
+	width: 26%;
+	text-align: center;
+	margin-left: 70px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+}
+
+.cuento img{
+	width: 100%;
+	transition: transform 500ms;
+	margin-bottom: 15px;
+}
+
+.cuento img:hover{
+	transform: scale(1.10,1.10);
+	cursor: pointer;
+}
+
+.cuento a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/* Página reproducción de Videos */
+
+.videos{
+	display: block;
+	margin-left: 30px;
+	text-align: center;
+}
+
+.videos iframe{
+	width: 960px;
+	height: 515px; 
+}
+
+
+/* Página Supage2 */
+
+.detail{
+	list-style: none;
+	display: block;
+	float: left;
+	width: 26%;
+	text-align: center;
+	margin-left: 70px;
+	margin-right: 10px;
+	margin-bottom: 40px;
+}
+
+.detail img{
+	width: 60%;
+	transition: transform 500ms;
+	margin-bottom: 10px;
+}
+
+.detail img:hover{
+	transform: scale(1.20,1.20);
+	cursor: pointer;
+}
+
+.detail img:active{
+	transform: scale(1.80,1.80);
+}
+
+.detail a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/* Componente HOME */
+
+.bx-wrapper, .bx-viewport{
+	height: 600px !important;
+}
+
+.containerSlider{
+	margin-left: 70px !important;
+	margin-right: 70px !important;
+	padding-bottom: 30px;
+	
+}
+
+
+.home p{
+	font-family: "mustardo";
+	font-size: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.home img{
+	width: 125px;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -7px;
+}
+
+.description{
+	background: rgba(255,255,255,1);
+	padding-bottom: 0px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.description div{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 70px;
+	margin-right: -40px;
+	
+}
+
+.description a{
+	width: 40%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 70px;
+	margin-right: -70px;
+	
+}
+
+.description p{
+	width: 85%;
+	text-align: left;
+	margin-top: 100px;
+	margin-left: 20px;
+	font-family: "SFPro";
+}
+
+.description h1{
+	width: 85%;
+	font-size: 40px;
+	text-align: left;
+	margin-top: 60px;
+	margin-left: 20px;
+	margin-bottom: -95px;
+}
+
+.description img{
+	width: 100%;
+}
+
+#Title1{
+	text-align: center;
+	font-size: 40px;
+	padding-bottom: 50px;
+
+}
+
+
+/* JUEGOS */
+
+.games{
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-left: 130px;
+}
+
+.games iframe{
+	width: 960px;
+	height: 515px;
+}
+
+
+/* ABOUT */
+
+.AboutIpad{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	background: white;
+}
+
+.AboutIpad div{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 70px;
+	margin-right: -70px;
+	
+}
+
+.AboutIpad a{
+	width: 40%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 70px;
+	margin-right: -70px;
+
+}
+
+.AboutIpad img{
+	width: 100%;
+}
+
+.AboutIpad iframe{
+	width: 95%;
+	height: 400px;
+	margin-left: 34px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius:20px;
+	overflow: hidden;
+}
+
+.AboutIpad p{
+	width: 85%;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 80px;
+
+}
+
+.AboutIpad h1{
+	width: 85%;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 150px;
+	margin-left: 80px;
+	margin-bottom: -95px;
+}
+
+.AboutComputer{
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	background: white;
+}
+
+.AboutComputer div{
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 70px;
+	margin-right: -70px;
+	
+}
+
+.AboutComputer a{
+	width: 40%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 70px;
+	margin-right: -70px;
+	
+}
+
+.AboutComputer img{
+	width: 100%;
+
+}
+
+#Ramiro{
+	width: 300px;
+	border-radius:170px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-left: 250px;
+}
+
+#DescAutor{
+	margin-left: -95px;
+}
+
+.AboutComputer p{
+	width: 85%;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 20px;
+
+}
+
+.AboutComputer h1{
+	width: 85%;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 90px;
+	margin-left: 20px;
+	margin-bottom: -95px;
+}
+
+
+.TitleAbout{
+	text-align: center;
+	padding-bottom: 40px;
+	font-size: 40px;
+
+}
+
+.TitleAbout p{
+	font-family: "mustardo";
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 50px;
+}
+
+.TitleAbout h3{
+	display: inline-block;
+}
+
+
+/* CONTACTO */
+
+.contact{
+	text-align: left;
+	width: 40%;
+	margin-left: 440px;
+	display: inline-block;
+	float: left;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+
+.form-group input{
+	height: 30px;
+	width: 90%;
+	margin-top: 5px;
+	font-family: "SFPro";
+	font-size: 15px;
+}
+
+.form-group textarea{
+	height: 150px;
+	width: 90%;
+	margin-top: 5px;
+	font-family: "SFPro";
+	font-size: 15px;
+}
+
+.btn-primary{
+	height: 40px;
+	width: 90.5%;
+	margin-top: 5px;
+	font-family: "SFPro";
+	font-size: 20px;
+	background: #6b8e23;
+	display: block;
+	cursor: pointer;
+	border: 1px solid #6b8e23;
+}
+
+.btn-primary:hover{
+	background: #32cd32;
+	border: 1px solid #32cd32;
+}
+
+.btn-primary:disabled{
+	opacity: 0.6;
+	cursor: not-allowed;
+	color: white;
+}
+
+#ws{
+	width: 50px;
+	position: fixed;
+	margin-top: 435px;
+	margin-left: 290px;
+	transition: transform 500ms;
+	background: #00bb2d;
+	padding: 10px;
+	border-radius: 100px;
+}
+
+#ws:hover{
+	transform: scale(1.10,1.10);
+	opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+

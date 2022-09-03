@@ -1,0 +1,15 @@
+<div class="container9">
+	<h2>Repertorio {{namee}}</h2>
+
+	<ul>
+		<li *ngFor="let subp of subpage" class="cuento">
+			<a [routerLink]="['/sonidos', subp.name]">
+				<a>
+					<img src="{{'https://firebasestorage.googleapis.com/v0/b/celda-51.appspot.com/o/Subpage2%2F'+subp.img+'?alt=media&token=4c7259ca-8fca-49ba-998e-f02756cc04e8'}}" *ngIf="subp.img"/>
+				</a>
+				<h3>{{subp.name}}</h3>
+			</a>
+		</li>
+	</ul>
+</div>
+
